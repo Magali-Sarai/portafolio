@@ -56,14 +56,13 @@ La construcción de este portafolio partió de una plantilla genérica, la cual 
 
 ## Capturas de Pantalla
 
-*(Nota: A continuación se muestran las capturas del portafolio ejecutándose en el navegador web local).*
 
-![Vista de la sección de Inicio (Hero)](img/inicio.png)
+![Vista de la sección de Inicio](assets/img/inicio.png)
 *Figura 1: Pantalla de inicio mostrando la tipografía 8-bits y el fondo animado.*
 
-![Vista de la sección Sobre Mí y Habilidades](img/sobremi.png)
-![Vista de la sección Sobre Mí y Habilidades](img/habilidades.png)
+![Vista de la sección Sobre Mí](assets/img/sobremi.png)
+![Vista de la sección de Habilidades](assets/img/habilidades.png)
 *Figura 2: Secciones de perfil, datos de contacto y barras de progreso de tecnologías.*
 
-![Vista de la sección del Portafolio](img/proyectos.png)
+![Vista de la sección del Portafolio](assets/img/proyectos.png)
 *Figura 3: Cuadrícula de proyectos con filtros funcionales e integración de medios.*
