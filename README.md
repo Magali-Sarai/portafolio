@@ -56,7 +56,7 @@ La construcción de este portafolio partió de una plantilla genérica, la cual 
 
 ## Capturas de Pantalla
 
-![inicio](img/inicio.png)
-![sobremi](img/sobremi.png)
-![habilidades](img/habilidades.png)
-![proyectos](img/proyectos.png)
+![inicio](assets/img/portfolio/inicio.png)
+![sobremi](assets/img/portfolio/sobremi.png)
+![habilidades](assets/img/portfolio/habilidades.png)
+![proyectos](assets/img/portfolio/proyectos.png)
