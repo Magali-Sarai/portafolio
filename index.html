@@ -35,7 +35,7 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="Foto de perfil de Magali" class="img-fluid rounded-circle">
+      <img src="assets/img/yo.jpg" alt="Foto de perfil de Magali" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
@@ -43,7 +43,7 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="#" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://github.com/Magali-Sarai" class="github" target="_blank"><i class="bi bi-github"></i></a>
       <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
       <a href="#" class="envelope"><i class="bi bi-envelope"></i></a>
     </div>
@@ -66,8 +66,10 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-      <img src="assets/img/hero-bg.jpg" alt="Fondo tecnológico" data-aos="fade-in" class="">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="retro-stars"></div>
+        <div class="retro-stars-2"></div>
+        <div class="retro-stars-3"></div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Magali Sarai Diego Revilla</h2>
         <p>Soy <span class="typed" data-typed-items="Ingeniera en Sistemas, Desarrolladora de Software, DBA Oracle, Diseñadora UI/UX, Administradora de Redes">Ingeniera en Sistemas</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
@@ -83,7 +85,8 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="Perfil">
+            <img src="assets/img/yo.jpg" class="img-fluid" alt="Perfil">
+            
           </div>
           <div class="col-lg-8 content">
             <h2>Desarrolladora de Software &amp; Entusiasta UI/UX.</h2>
@@ -245,22 +248,22 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="CoordinaTec UI">
+                <img src="assets/img/portfolio/halcon.png" height="100px" width="500px" class="img-fluid" alt="CoordinaTec UI">
                 <div class="portfolio-info">
                   <h4>CoordinaTec Web App</h4>
                   <p>Sistema de gestión de citas académicas</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="CoordinaTec" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/halcon.png" title="CoordinaTec" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-data">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="Oracle 19c">
+                <img src="assets/img/portfolio/CFE.png" class="img-fluid" alt="Oracle 19c">
                 <div class="portfolio-info">
                   <h4>Modelo de Datos CFE</h4>
                   <p>Oracle 19c, RMAN y MySQL</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Base de Datos" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/CFE.png" title="Base de Datos" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div>
@@ -274,40 +277,50 @@
                   <h4>Retro Sci-Fi HUD UI Library</h4>
                   <p>Librería JS con estética 8-bits</p>
                     <video autoplay loop muted playsinline class="img-fluid">
-                  <source src="assets/img/portfolio/SpideyInterfaz.mp4" type="video/mp4" class="img-fluid" alt="Retro 8-bit UI">
+                  <a src="assets/img/portfolio/SpideyInterfaz.mp4" title="JavaFX" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="JavaFX Fractals">
-                <div class="portfolio-info">
-                  <h4>Generador de Fractales L-System</h4>
-                  <p>Arte generativo con Java y JavaFX</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="JavaFX" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
+            <<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+  <div class="portfolio-content h-100">
+    
+    <!-- 1. El VIDEO reemplaza a la imagen y va justo aquí -->
+    <video autoplay loop muted playsinline class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;">
+      <!-- Asegúrate de cambiar el nombre del archivo por tu video real .mp4 -->
+      <source src="assets/img/portfolio/ÁrbolFractal.mp4" type="video/mp4">
+    </video>
+
+       <!-- 2. La capa de información al pasar el mouse se mantiene intacta -->
+        <div class="portfolio-info">
+         <h4>Generador de Fractales L-System</h4>
+          <p>Arte generativo con Java y JavaFX</p>
+             <!-- 3. Estos son los botones de la lupa y el enlace que se habían borrado -->
+              <a href="assets/img/portfolio/ÁrbolFractal.mp4" title="JavaFX" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+               <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+           </div>
+      </div>
+</div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-data">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="MikroTik">
+                <img src="assets/img/portfolio/cisco.png" class="img-fluid" alt="MikroTik">
                 <div class="portfolio-info">
                   <h4>Topologías MikroTik & Cisco</h4>
                   <p>Configuración de VLANs y ruteo</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="Redes" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/cisco.png" title="Redes" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="Prolog N-Queens">
+                <img src="assets/img/portfolio/prolog.png" class="img-fluid" alt="Prolog N-Queens">
                 <div class="portfolio-info">
                   <h4>Soluciones Lógicas en Prolog</h4>
                   <p>Árboles genealógicos y N-Reinas</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="SWI-Prolog" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/prolog.png" title="SWI-Prolog" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div>

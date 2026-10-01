@@ -547,30 +547,71 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100vh; /* ¡Esta es la clave! Hace que ocupe toda la altura de la pantalla */
   position: relative;
   padding: 80px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #141A29; /* Nuestro fondo azul marino */
+  overflow: hidden; /* Evita que las estrellas se salgan del contenedor */
 }
 
-.hero img {
+/* Capas base de las estrellas para que cubran toda la pantalla */
+.retro-stars, .retro-stars-2, .retro-stars-3 {
   position: absolute;
-  inset: 0;
-  display: block;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: 1;
+  z-index: 1; /* Quedan detrás del  texto */
 }
 
-.hero:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 70%);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
+/* Capa 1: Estrellas blancas y amarillas pequeñas */
+.retro-stars {
+  background-image:
+    radial-gradient(2px 2px at 40px 60px, #F4F1DE 100%, transparent 100%),
+    radial-gradient(2px 2px at 150px 30px, #F0C330 100%, transparent 100%),
+    radial-gradient(2px 2px at 90px 120px, #ffffff 100%, transparent 100%),
+    radial-gradient(2px 2px at 10px 160px, #F4F1DE 100%, transparent 100%);
+  background-size: 200px 200px; /* Tamaño del patrón que se repite */
+  animation: twinkle-fast 2s infinite alternate;
+}
+
+/* Capa 2: Estrellas un poco más grandes con otro patrón */
+.retro-stars-2 {
+  background-image:
+    radial-gradient(3px 3px at 80px 90px, #ffffff 100%, transparent 100%),
+    radial-gradient(2px 2px at 180px 150px, #F0C330 100%, transparent 100%),
+    radial-gradient(3px 3px at 30px 10px, #F4F1DE 100%, transparent 100%);
+  background-size: 250px 250px;
+  animation: twinkle-slow 3.5s infinite alternate;
+}
+
+/* Capa 3: Estrellas muy dispersas parpadeando a destiempo */
+.retro-stars-3 {
+  background-image:
+    radial-gradient(2px 2px at 20px 200px, #F0C330 100%, transparent 100%),
+    radial-gradient(3px 3px at 220px 80px, #ffffff 100%, transparent 100%);
+  background-size: 300px 300px;
+  animation: twinkle-fast 4s infinite alternate-reverse;
+}
+
+/* Animaciones Keyframes para el parpadeo (fade in / fade out) */
+@keyframes twinkle-fast {
+  0% { opacity: 0.1; }
+  100% { opacity: 1; }
+}
+
+@keyframes twinkle-slow {
+  0% { opacity: 0.3; }
+  100% { opacity: 0.8; }
+}
+
+/* El contenedor del texto quede por encima de las estrellas */
+.hero .container {
+  z-index: 3;
+  position: relative;
 }
 
 .hero .container {
